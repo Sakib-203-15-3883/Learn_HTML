@@ -1,0 +1,148 @@
+<!-- the index.html file is commonly used to refer to the homepage of a website.
+This is because web servers are typically configured to look for an index file
+as the default page that should be displayed when a user navigates to a
+website. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+  </head>
+  <body>
+    <!-- 
+      paragraph tag : The <p> tag in HTML is used to define a paragraph of text. It is a container tag and is used to group together a block of related text content, such as a paragraph, list of items, or other similar content. 
+      
+      the <p> tag is a block-level element that creates a new paragraph. By default, block-level elements take up the entire width of their container and start on a new line after the preceding element. So, when we use multiple <p> tags, the text will be automatically separated into different paragraphs and displayed on separate lines. -->
+    <p>
+      HTML stands for Hyper Text Markup Language and it is used to create web
+      pages.
+    </p>
+
+    <p>
+      Web development involves creating and designing web pages for the
+      internet.
+    </p>
+    <hr />
+    <!-- 
+      The <button> tag is an inline-level element. However, you can change its display property to block-level using CSS.
+
+      The <button> tag can include text, images, or other HTML elements as its content. It also has a variety of attributes that can be used to customize its behavior and appearance, such as disabled, type, and onclick.
+        -->
+
+    <!-- 
+      Here's an example of a <button> tag with text content: -->
+
+    <button type="button" onclick="alert('Hello, world!')">Click me</button>
+
+    <button>login</button>
+    <button>signup</button>
+    <hr />
+
+    <!--
+       All  heading tags(h1 to h6):it,s block-level elements . HTML heading tags are used to define the importance of content in a web page.The heading tags can also affect the SEO of the web page as search engines use them to understand the content and its relevance -->
+    <h1>Welcome to our website!</h1>
+    <p>
+      This website is the perfect place to find everything you need to know
+      about our business.
+    </p>
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to provide high-quality products and services to our
+      customers while maintaining our commitment to sustainability and social
+      responsibility.
+    </p>
+    <h3>Meet Our Team</h3>
+    <p>
+      Get to know the people behind our brand and learn more about their
+      expertise and experience.
+    </p>
+    <h4>Our Services</h4>
+    <p>
+      From consultation to implementation, we offer a range of services to help
+      our clients achieve their goals.
+    </p>
+    <h5>Our Products</h5>
+    <p>
+      Browse our selection of products, all made with the highest quality
+      materials and designed with your needs in mind.
+    </p>
+    <h6>Contact Us</h6>
+    <p>
+      Have a question or need help? Contact us today and we'll be happy to
+      assist you!
+    </p>
+    <hr />
+    <!-- anchor tag:It is an inline-level element.  The anchor tag, also known as the hyperlink tag, is used in HTML to create links to other web pages, documents, or specific locations within a web page. It is denoted by the <a> tag.href attribute stands for "Hypertext Reference" -->
+
+    <!--it,s known as  absolute link -->
+
+    <a href="https://www.youtube.com/">Explore Youube</a><br /><br />
+    <a href="https://www.w3schools.com/">Explore w3 school </a><br /><br />
+    <!--it,s known as relative link -->
+    <a href="introduce.html">Introduce page</a><br /><br />
+    <a href="/htmlFolder/details.html">Details</a><br /><br />
+    <hr />
+
+    <!-- <img> tag: image is an inline-level element  -->
+
+    <img src="/image2.jpg" alt="random image " height="300" />
+    <img src="/image3.jfif" alt="random image" height="300" />
+    <hr />
+
+    <!-- bold , italic , underline: inline-level element -->
+    <p>
+      <b
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+        esse!</b
+      >
+    </p>
+    <p>
+      <i
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis,
+        iusto.</i
+      >
+    </p>
+    <p>
+      <u>hello world</u>
+    </p>
+
+    <!--
+       big , small and hr  tag :The <hr> tag in HTML stands for "horizontal rule" and is used to create a horizontal line or divider on a webpage. It is a self-closing tag, meaning it does not require a closing tag.
+
+      The <hr> tag can be used to separate different sections of content on a page or to visually break up a long list of items. It is often used in conjunction with headings and other structural tags to organize content on a page.-->
+    <big>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, non!
+
+      <small
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Exercitationem, quos!</small
+      >
+    </big>
+    <hr />
+
+    <!-- 
+      subscript and superscript tag -->
+
+    <p>H<sub>2</sub>O</p>
+    <p>A<sup>n</sup>+B</p>
+    <hr />
+
+    <!-- 
+      pre tag: The <pre> tag in HTML stands for "preformatted text" and is used to display text in a fixed-width font, preserving both spaces and line breaks. -->
+
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus iste      
+        
+        ut libero, commodi vel. Ab amet, est, ipsam veritatis         voluptatum iure exercitationem nisi esse eveniet itaque libero         totam explicabo?</pre
+    >
+
+    <hr />
+
+    <!--
+       create temporary space using div -->
+
+    <div style="height: 500px"></div>
+  </body>
+</html>
