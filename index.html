@@ -78,7 +78,10 @@ website. -->
 
     <!--it,s known as  absolute link -->
 
-    <a href="https://www.youtube.com/">Explore Youube</a><br /><br />
+    <a href="https://www.youtube.com/" target="_blank"
+      ><img src="download.png" alt="" height="100" width="100"
+    /></a>
+    <br /><br />
     <a href="https://www.w3schools.com/">Explore w3 school </a><br /><br />
     <!--it,s known as relative link -->
     <a href="introduce.html">Introduce page</a><br /><br />
@@ -140,8 +143,284 @@ website. -->
 
     <hr />
 
-    <!--
-       create temporary space using div -->
+    <!-- page layout techniques
+    using semantic tags for layout: Semantic tags were introduced in HTML5, which was released in 2014. HTML5 introduced several new semantic tags, such as <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer>, which are designed to provide additional meaning and context to the content of a webpage. semantic tags play a big role in SEO (Search Engine Optimization) because they help search engines to understand the content and structure of a webpage. Semantic tags provide additional meaning and context to the content, which makes it easier for search engines to crawl and index the content of the page.  -->
+
+    <!-- header tag(=>nav tag) :the <header> tag is used to define the header section of a webpage. This is the section that typically appears at the top of the page and may contain the website's logo, navigation menu, and other important information.
+      
+    <!-- nav tag: the <nav> tag should only be used for primary navigation menus that allow users to move between different sections or pages of a website. Secondary menus or contextual menus should be marked up using other appropriate tags..
+    
+    the <nav> tag is used to define a section of a webpage that contains navigation links. This is typically used for menus that allow users to navigate to different pages or sections of a website.  -->
+
+    <!-- In this given example, we have a header with a background image and a navigation menu. The <nav> tag is used to indicate that this section contains navigation links, and the <ul> and <li> tags are used to create an unordered list of links. The <a> tag is used to create the actual links, and the href attribute specifies the URL that the links should point to. -->
+
+    <header>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        dolorum soluta blanditiis cupiditate itaque enim! Quisquam eveniet eaque
+        aliquam alias?
+      </h1>
+      <nav style="background-image: url(image1.jpg)">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- main (=> section =>article => aside tag ): the <main> tag should only be used once per page, and it should contain the primary content that is relevant to the page's purpose. -->
+
+    <!-- section tag:The <section> tag is a semantic HTML5 tag that is used to group related content on a webpage. It represents a section of a document or an application, and can be used to divide a webpage into smaller, more manageable parts. -->
+
+    <!-- article tag : The <article> tag is a semantic HTML5 tag that is used to define a self-contained, independent piece of content on a webpage. It is typically used to represent a blog post, news article, or any other type of content that can stand on its own and be syndicated or shared independently from the rest of the page.-->
+
+    <!-- aside tag: The <aside> tag is used in HTML to mark content that is related to the main content of the page but is not an integral part of it. It can be used to mark content such as sidebars, notes, quotes, or advertisements.-->
+
+    <main>
+      <section>
+        <h2>>Section Title</h2>
+        <p>his is the content of the first section.</p>
+      </section>
+
+      <article>
+        <header>
+          <h2>10 Tips for Writing Great Blog Posts</h2>
+          <p>By John Smith | Published on January 1, 2022</p>
+        </header>
+        <img src="blog-post-image.jpg" alt="Blog post image" />
+        <p>
+          Are you struggling to come up with ideas for your blog posts? Do you
+          want to write posts that are engaging, informative, and shareable? In
+          this article, we'll share 10 tips for writing great blog posts that
+          will help you attract more readers, increase engagement, and grow your
+          blog.
+        </p>
+        <ul>
+          <li>Tip #1: Write for your audience</li>
+          <li>Tip #2: Use attention-grabbing headlines</li>
+          <li>Tip #3: Tell a story</li>
+          <li>Tip #4: Use subheadings to break up your content</li>
+          <li>Tip #5: Use visuals to illustrate your points</li>
+          <li>Tip #6: Write in a conversational tone</li>
+          <li>Tip #7: Use data and statistics to support your arguments</li>
+          <li>Tip #8: Provide practical advice and tips</li>
+          <li>Tip #9: Encourage engagement and discussion</li>
+          <li>Tip #10: Edit and proofread your posts carefully</li>
+        </ul>
+        <footer>
+          <p>
+            Posted in <a href="#">Blogging</a>, <a href="#">Writing</a> | Tagged
+            with <a href="#">blogging tips</a>,
+            <a href="#">content marketing</a>, <a href="#">writing tips</a>
+          </p>
+        </footer>
+      </article>
+
+      <article>
+        <h2>Another Article Title</h2>
+        <p>This is the content of the second article.</p>
+      </article>
+
+      <section>
+        <h2>Another Section Title</h2>
+        <p>This is the content of the second section.</p>
+      </section>
+
+      <aside>
+        <h2>Aside Title</h2>
+        <p>This is some supplementary content in the aside element</p>
+      </aside>
+    </main>
+    <hr />
+
+    <!-- footer tag:   -->
+
+    <footer>
+      <p>Copyright © 2023 My Website. All rights reserved.</p>
+    </footer>
+    <hr />
+
+    <!-- multimedia elements: HTML5 introduced new multimedia elements that can be used to display images, audio, and video directly in web pages without requiring any third-party plugins. -->
+
+    <img src="image3.jfif" alt="A beautiful image" />
+
+    <audio controls>
+      <source
+        src="energetic_rock_background_music_for_sports_workout_videos_-2156981305863663554.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <br /><br />
+
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/HcOc7P5BMi4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <hr />
+
+    <!-- non-semantic tags -->
+    <!-- div: it,s block element . by default,block element  will expand to fill the entire width of their parent container.  The <div> tag is a generic container element that is used to group together other HTML elements for styling purposes. It has no semantic meaning of its own but is instead used as a container for other HTML elements to organize them into logical sections or to apply styles to groups of elements. -->
+
+    <div class="container">
+      <h1>Welcome to div tag</h1>
+      <p>This is some sample text.</p>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- span , anchor , button , image , audio , video are inline level element -->
+
+    <span>it,s an inline element </span>
+    <hr />
+
+    <!-- list -->
+
+    <h2>Fruits List</h2>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Dates</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Dates</li>
+    </ol>
+    <hr />
+
+    <!-- table -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+
+          <td>$10.00</td>
+          <td>2</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>$15.00</td>
+          <td>1</td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td>Product 3</td>
+          <td>$20.00</td>
+          <td>3</td>
+          <td>$60.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>$95.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <!-- form:
+
+    <!-- input(label accociate with input (Attribute: type(text,email,tel,file,button,checkbox,radio),placeholder,id, name,required) -->
+
+    <!-- select(label accociate with select. option(value)):  -->
+    <!-- textarea(placeholder, id ,name, rows,cols) -->
+
+    <!-- class and id  -->
+
+    <form action="/submit" method="post">
+      <h2>Job Application</h2>
+
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        placeholder="Enter your Name"
+        id="name"
+        name="name"
+        required
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        placeholder="Enter your Email"
+        id="email"
+        name="email"
+        required
+      /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        placeholder="Enter Your Phone number"
+        id="phone"
+        name="phone"
+        required
+      /><br /><br />
+
+      <label for="resume">Upload your resume:</label>
+      <input type="file" id="resume" name="resume" /><br /><br />
+
+      <label for="position">Position:</label>
+      <select id="position" name="position" required>
+        <option value="">--Select--</option>
+        <option value="Web Developer">Web Developer</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Marketing Manager">Marketing Manager</option></select
+      ><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea
+        placeholder="Write Your FeedBack"
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+      ></textarea
+      ><br /><br /><br />
+
+      <input type="submit" value="Submit" /><br /><br />
+
+      <input type="checkbox" name="same" id="102" /><br />
+      <br />
+
+      <input type="radio" name="same" id="" />
+      <input type="radio" name="same" id="" />
+      <input type="radio" name="same" id="" />
+    </form>
+
+    <!-- 
+      create temporary space using div -->
 
     <div style="height: 500px"></div>
   </body>
