@@ -1,0 +1,22 @@
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+
+  height: 100vh;
+  overflow: none;
+  flex-direction: row;
+}
+
+.FlexContainer div {
+  width: 20vw;
+  height: 100px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  text-align: center;
+  background-color: lightblue;
+}

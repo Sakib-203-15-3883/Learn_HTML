@@ -9,12 +9,31 @@ website. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn HTML</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body
+    style="
+      background-image: linear-gradient(
+        to right top,
+        #d16ba5,
+        #c661ae,
+        #b659ba,
+        #9f55c7,
+        #7d55d4,
+        #6665e2,
+        #4874ee,
+        #0081f7,
+        #009bfa,
+        #00afed,
+        #00bfd7,
+        #20cbc0
+      );
+    "
+  >
     <!-- 
       paragraph tag : The <p> tag in HTML is used to define a paragraph of text. It is a container tag and is used to group together a block of related text content, such as a paragraph, list of items, or other similar content. 
       
-      the <p> tag is a block-level element that creates a new paragraph. By default, block-level elements take up the entire width of their container and start on a new line after the preceding element. So, when we use multiple <p> tags, the text will be automatically separated into different paragraphs and displayed on separate lines. -->
+      the <p> tag is a block-level element that creates a new line. By default, block-level elements take up the entire width of their container and start on a new line after the preceding element. So, when we use multiple <p> tags, the text will be automatically separated into different paragraphs and displayed on separate lines. -->
     <p>
       HTML stands for Hyper Text Markup Language and it is used to create web
       pages.
@@ -418,6 +437,15 @@ website. -->
       <input type="radio" name="same" id="" />
       <input type="radio" name="same" id="" />
     </form>
+    <br />
+
+    <section class="FlexContainer">
+      <div>Sakib</div>
+      <div>Mukit</div>
+      <div>Talha</div>
+      <div>Sakib</div>
+      <div>Jahidul</div>
+    </section>
 
     <!-- 
       create temporary space using div -->
